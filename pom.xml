@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.github.hazendaz</groupId>
+        <artifactId>base-parent</artifactId>
+        <version>9-SNAPSHOT</version>
+        <relativePath />
+    </parent>
+
+    <groupId>com.github.hazendaz</groupId>
+    <artifactId>test-aggregator</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>test-aggregator</name>
+    <description>Test Aggregator brings in test dependencies for modern usage.</description>
+    <url>https://github.com/hazendaz/test-aggregator</url>
+    <inceptionYear>2011</inceptionYear>
+    <organization>
+        <name>hazendaz</name>
+        <url>https://github.com/hazendaz/</url>
+    </organization>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>manual</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>jlandis</id>
+            <name>Jeremy Landis</name>
+            <email>jeremylandis@hotmail.com</email>
+            <url>http://www.linkedin.com/pub/jeremy-landis/19/b27/548/</url>
+            <organization>hazendaz</organization>
+            <organizationUrl>https://github.com/hazendaz</organizationUrl>
+            <roles>
+                <role>Architect</role>
+                <role>Developer</role>
+            </roles>
+            <timezone>-5</timezone>
+            <properties>
+                <picUrl>http://m.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/1/000/128/174/30cff69.jpg</picUrl>
+            </properties>
+        </developer>
+    </developers>
+    <contributors>
+        <contributor>
+            <name>Jeremy Landis</name>
+            <email>jeremylandis@hotmail.com</email>
+            <url>http://www.linkedin.com/pub/jeremy-landis/19/b27/548/</url>
+            <organization>hazendaz</organization>
+            <organizationUrl>https://github.com/hazendaz</organizationUrl>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>-5</timezone>
+            <properties>
+                <picUrl>http://m.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/1/000/128/174/30cff69.jpg</picUrl>
+            </properties>
+        </contributor>
+    </contributors>
+
+    <prerequisites>
+        <maven>3.2.5</maven>
+    </prerequisites>
+
+    <scm>
+        <connection>scm:git:ssh://git@github.com/hazendaz/test-aggregator.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/hazendaz/test-aggregator.git</developerConnection>
+        <url>https://github.com/hazendaz/test-aggregator</url>
+        <tag>HEAD</tag>
+    </scm>
+    <issueManagement>
+        <system>Github</system>
+        <url>https://github.com/hazendaz/test-aggregator/issues</url>
+    </issueManagement>
+    <ciManagement>
+        <system>travis-ci</system>
+        <url>https://travis-ci.org/hazendaz/test-aggregator</url>
+        <notifiers>
+            <notifier>
+                <type>mail</type>
+                <sendOnError>true</sendOnError>
+                <sendOnFailure>true</sendOnFailure>
+                <sendOnSuccess>false</sendOnSuccess>
+                <sendOnWarning>false</sendOnWarning>
+                <configuration>
+                    <address>jeremylandis@hotmail.com</address>
+                </configuration>
+            </notifier>
+        </notifiers>
+    </ciManagement>
+
+    <distributionManagement>
+        <site>
+            <id>gh-pages</id>
+            <name>Test Aggregator GitHub Pages</name>
+            <url>git:ssh://git@github.com/hazendaz/test-aggregator.git?gh-pages#</url>
+        </site>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <properties>
+        <copyright>2015</copyright>
+        <github.global.server>github</github.global.server>
+
+        <slf4j.version>1.7.12</slf4j.version>
+
+        <assertj.version>2.2.0</assertj.version>
+        <catch-exception.version>1.4.4</catch-exception.version>
+        <hamcrest.version>1.3</hamcrest.version>
+        <javassist.version>3.20.0-GA</javassist.version>
+        <jmockit.version>1.20</jmockit.version>
+        <junit.version>4.12</junit.version>
+        <objenesis.version>2.2</objenesis.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <!-- prevent warning: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder". -->
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>${slf4j.version}</version>
+                <scope>compile</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>eu.codearte.catch-exception</groupId>
+                <artifactId>catch-exception</artifactId>
+                <version>${catch-exception.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.assertj</groupId>
+                <artifactId>assertj-core</artifactId>
+                <version>${assertj.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest-core</artifactId>
+                <version>${hamcrest.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.javassist</groupId>
+                <artifactId>javassist</artifactId>
+                <version>${javassist.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jmockit</groupId>
+                <artifactId>jmockit</artifactId>
+                <version>${jmockit.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.objenesis</groupId>
+                <artifactId>objenesis</artifactId>
+                <version>${objenesis.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <!-- Junit needs to come last for jmockit usage -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>compile</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>eu.codearte.catch-exception</groupId>
+            <artifactId>catch-exception</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.javassist</groupId>
+            <artifactId>javassist</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jmockit</groupId>
+            <artifactId>jmockit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.objenesis</groupId>
+            <artifactId>objenesis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+    </dependencies>
+</project>
