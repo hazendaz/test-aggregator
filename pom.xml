@@ -123,7 +123,7 @@
         <javassist.version>3.22.0-CR1</javassist.version>
         <jmockit.version>1.31</jmockit.version>
         <junit.version>4.12</junit.version>
-        <objenesis.version>2.5.1</objenesis.version>
+        <objenesis.version>2.6</objenesis.version>
     </properties>
 
     <dependencyManagement>
