@@ -67,10 +67,6 @@
         </contributor>
     </contributors>
 
-    <prerequisites>
-        <maven>3.2.5</maven>
-    </prerequisites>
-
     <scm>
         <connection>scm:git:ssh://git@github.com/hazendaz/test-aggregator.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/hazendaz/test-aggregator.git</developerConnection>
