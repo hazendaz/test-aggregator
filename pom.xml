@@ -111,7 +111,7 @@
     </distributionManagement>
 
     <properties>
-        <slf4j.version>2.0.0-alpha3</slf4j.version>
+        <slf4j.version>2.0.0-alpha4</slf4j.version>
 
         <assertj.version>3.20.2</assertj.version>
         <catch-exception.version>2.0</catch-exception.version>
