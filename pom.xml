@@ -116,7 +116,7 @@
         <assertj.version>3.23.1</assertj.version>
         <catch-exception.version>2.1.4</catch-exception.version>
         <javassist.version>3.29.1-GA</javassist.version>
-        <jmockit.version>1.49.2</jmockit.version>
+        <jmockit.version>1.49.4</jmockit.version>
         <junit.version>5.9.0</junit.version>
         <objenesis.version>3.3</objenesis.version>
     </properties>
