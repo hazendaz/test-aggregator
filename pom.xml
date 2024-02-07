@@ -114,7 +114,7 @@
         <java.version>11</java.version>
         <java.release.version>11</java.release.version>
 
-        <slf4j.version>2.0.11</slf4j.version>
+        <slf4j.version>2.0.12</slf4j.version>
 
         <assertj.version>3.25.3</assertj.version>
         <catch-exception.version>2.2.0</catch-exception.version>
