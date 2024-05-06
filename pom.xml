@@ -137,7 +137,7 @@
         <javassist.version>3.30.2-GA</javassist.version>
         <jmockit.version>1.52.0</jmockit.version>
         <junit.version>5.10.2</junit.version>
-        <objenesis.version>3.3</objenesis.version>
+        <objenesis.version>3.4</objenesis.version>
     </properties>
 
     <dependencyManagement>
