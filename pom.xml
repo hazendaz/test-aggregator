@@ -133,7 +133,7 @@
         <slf4j.version>2.0.13</slf4j.version>
 
         <assertj.version>3.26.0</assertj.version>
-        <catch-exception.version>2.2.0</catch-exception.version>
+        <catch-exception.version>2.3.2</catch-exception.version>
         <javassist.version>3.30.2-GA</javassist.version>
         <jmockit.version>1.53.0</jmockit.version>
         <junit.version>5.10.2</junit.version>
