@@ -121,7 +121,7 @@
         <site>
             <id>gh-pages-scm</id>
             <name>Test Aggregator GitHub Pages</name>
-            <url>git:ssh://git@github.com/hazendaz/test-aggregator.git?gh-pages#</url>
+            <url>scm:git:ssh://git@github.com/hazendaz/test-aggregator.git</url>
         </site>
     </distributionManagement>
 
