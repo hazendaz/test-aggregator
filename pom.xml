@@ -119,7 +119,7 @@
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
         <site>
-            <id>gh-pages</id>
+            <id>gh-pages-scm</id>
             <name>Test Aggregator GitHub Pages</name>
             <url>git:ssh://git@github.com/hazendaz/test-aggregator.git?gh-pages#</url>
         </site>
