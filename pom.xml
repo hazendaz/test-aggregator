@@ -27,7 +27,7 @@
 
     <groupId>com.github.hazendaz</groupId>
     <artifactId>test-aggregator</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>test-aggregator</name>
@@ -85,7 +85,7 @@
     <scm>
         <connection>scm:git:ssh://git@github.com/hazendaz/test-aggregator.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/hazendaz/test-aggregator.git</developerConnection>
-        <tag>test-aggregator-1.0.0</tag>
+        <tag>HEAD</tag>
         <url>https://github.com/hazendaz/test-aggregator</url>
     </scm>
     <issueManagement>
