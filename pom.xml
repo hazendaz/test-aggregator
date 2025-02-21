@@ -135,7 +135,7 @@
         <catch-exception.version>2.3.3</catch-exception.version>
         <javassist.version>3.30.2-GA</javassist.version>
         <jmockit.version>1.55.0</jmockit.version>
-        <junit.version>5.11.4</junit.version>
+        <junit.version>5.12.0</junit.version>
         <objenesis.version>3.4</objenesis.version>
     </properties>
 
