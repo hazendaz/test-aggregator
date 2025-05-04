@@ -47,41 +47,6 @@
         </license>
     </licenses>
 
-    <developers>
-        <developer>
-            <id>jlandis</id>
-            <name>Jeremy Landis</name>
-            <email>jeremylandis@hotmail.com</email>
-            <url>http://www.linkedin.com/pub/jeremy-landis/19/b27/548/</url>
-            <organization>hazendaz</organization>
-            <organizationUrl>https://github.com/hazendaz</organizationUrl>
-            <roles>
-                <role>Architect</role>
-                <role>Developer</role>
-            </roles>
-            <timezone>-5</timezone>
-            <properties>
-                <picUrl>http://m.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/1/000/128/174/30cff69.jpg</picUrl>
-            </properties>
-        </developer>
-    </developers>
-    <contributors>
-        <contributor>
-            <name>Jeremy Landis</name>
-            <email>jeremylandis@hotmail.com</email>
-            <url>http://www.linkedin.com/pub/jeremy-landis/19/b27/548/</url>
-            <organization>hazendaz</organization>
-            <organizationUrl>https://github.com/hazendaz</organizationUrl>
-            <roles>
-                <role>Developer</role>
-            </roles>
-            <timezone>-5</timezone>
-            <properties>
-                <picUrl>http://m.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/1/000/128/174/30cff69.jpg</picUrl>
-            </properties>
-        </contributor>
-    </contributors>
-
     <scm>
         <connection>scm:git:ssh://git@github.com/hazendaz/test-aggregator.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/hazendaz/test-aggregator.git</developerConnection>
