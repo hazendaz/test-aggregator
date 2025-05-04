@@ -58,20 +58,8 @@
         <url>https://github.com/hazendaz/test-aggregator/issues</url>
     </issueManagement>
     <ciManagement>
-        <system>travis-ci</system>
-        <url>https://travis-ci.org/hazendaz/test-aggregator</url>
-        <notifiers>
-            <notifier>
-                <type>mail</type>
-                <sendOnError>true</sendOnError>
-                <sendOnFailure>true</sendOnFailure>
-                <sendOnSuccess>false</sendOnSuccess>
-                <sendOnWarning>false</sendOnWarning>
-                <configuration>
-                    <address>jeremylandis@hotmail.com</address>
-                </configuration>
-            </notifier>
-        </notifiers>
+        <system>Github</system>
+        <url>https://github.com/hazendaz/test-aggregator/actions</url>
     </ciManagement>
 
     <distributionManagement>
