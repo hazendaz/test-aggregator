@@ -65,7 +65,7 @@
     <distributionManagement>
         <site>
             <id>gh-pages-scm</id>
-            <name>Test Aggregator GitHub Pages</name>
+            <name>GitHub Pages</name>
             <url>scm:git:ssh://git@github.com/hazendaz/test-aggregator.git</url>
         </site>
     </distributionManagement>
