@@ -76,7 +76,7 @@
 
         <slf4j.version>2.0.17</slf4j.version>
 
-        <assertj.version>3.27.6</assertj.version>
+        <assertj.version>3.27.7</assertj.version>
         <catch-exception.version>2.3.5</catch-exception.version>
         <javassist.version>3.30.2-GA</javassist.version>
         <jmockit.version>2.1.0</jmockit.version>
