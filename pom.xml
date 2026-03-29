@@ -12,7 +12,7 @@
     <parent>
         <groupId>com.github.hazendaz</groupId>
         <artifactId>base-parent</artifactId>
-        <version>57</version>
+        <version>58</version>
         <relativePath />
     </parent>
 
@@ -69,6 +69,7 @@
 
         <assertj.version>3.27.7</assertj.version>
         <catch-exception.version>2.3.5</catch-exception.version>
+        <checker-qual.version>3.54.0</checker-qual.version>
         <javassist.version>3.30.2-GA</javassist.version>
         <jmockit.version>2.1.0</jmockit.version>
         <junit.version>6.0.3</junit.version>
@@ -77,6 +78,12 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.checkerframework</groupId>
+                <artifactId>checker-qual</artifactId>
+                <version>${checker-qual.version}</version>
+            </dependency>
+
             <dependency>
                 <!-- prevent warning: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder". -->
                 <groupId>org.slf4j</groupId>
