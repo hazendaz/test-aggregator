@@ -71,7 +71,7 @@
         <catch-exception.version>2.4.0</catch-exception.version>
         <checker-qual.version>4.2.1</checker-qual.version>
         <javassist.version>3.32.0-GA</javassist.version>
-        <jmockit.version>2.2.0</jmockit.version>
+        <jmockit.version>2.3.0</jmockit.version>
         <junit.version>6.1.2</junit.version>
         <objenesis.version>3.5</objenesis.version>
     </properties>
